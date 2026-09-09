@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+
+    <section class="success-box">
+
+        <div class="success-icon">✓</div>
+
+        <h1>ORDER PLACED!</h1>
+
+        <p>Thank you for your purchase.</p>
+
+        <p>Your order has been successfully placed.</p>
+
+        <div class="order-info">
+            <p>Order ID: <strong>#ORD123456</strong></p>
+            <p>Total Paid: <strong id="total-price"></strong></p>
+        </div>
+
+        <a href="index.html" id="continue-shopping">
+            CONTINUE SHOPPING
+        </a>
+
+    </section>
+<script type="module">
+    import {finalPrice} from "./payment.js"
+    document.querySelector("#total-price").innerHTML=`₹${finalPrice}`;
+   
+</script>
+</body>
+
+</html>

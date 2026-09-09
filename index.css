@@ -1,0 +1,214 @@
+body {
+    margin:0;
+    background: #0b0d0f;
+    color: #f5f1e8;
+}
+
+body >* {
+    border: 2px solid #c9a86a;
+}
+
+h1 {
+    text-align:center;
+    font-family:"Oswald";
+    margin:0;
+    font-size:100px;
+}
+
+h2 {
+    text-align:center;
+    font-size:50px;
+}
+
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    border-bottom: 10px solid #c9a86a;
+}
+
+
+/* =========================
+   SHOP BY CATEGORY
+   ========================= */
+
+.types_of_products {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    padding: 50px;
+}
+
+.types_of_products > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+
+.category {
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #6f5a35;
+    background: linear-gradient(145deg, #17191b, #242019);
+
+    transition: 0.3s;
+}
+
+
+.category:hover {
+    border: 1px solid #d4af6a;
+    transform: translateY(-8px);
+}
+
+
+.category-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+
+.category h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+
+
+
+
+ a {
+    display: inline-block;
+
+    padding: 10px 25px;
+
+    color: #c9a86a;
+    text-decoration: none;
+
+    border: 1px solid #80683d;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+
+a:hover {
+    background: #c9a86a;
+    color: #0b0d0f;
+}
+
+
+/* =========================
+   SUMMER COLLECTION
+   ========================= */
+
+.summerCollection {
+    display:flex;
+    justify-content:space-between;
+    border-top: 2px solid #c9a86a;
+    border-bottom: 2px solid #c9a86a;
+    background: linear-gradient(260deg, #090b0d, #181817, #241f17);
+}
+
+.summerCollection div {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+}
+
+.summerCollection button {
+    font-size:20px;
+}
+
+
+/* =========================
+   WHY SHOP WITH US
+   ========================= */
+
+.benefits {
+    display:flex;
+}
+
+.benefits >* {
+    text-align: center;
+    flex:25%;
+    height:100%;
+    font-size:20px;
+    margin-right:5px;
+    background: linear-gradient(145deg, #17191b, #242019);
+    border: 1px solid #80683d;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-content {
+    display:flex;
+    justify-content:space-around;
+    font-size:20px;
+}
+
+.about-highlights>* {
+    border: 1px solid #8068;
+    background: #17191b;
+}
+
+.about-store {
+    background: linear-gradient(135deg, #111416, #1d1a15);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: #070809;
+    border-top: 2px solid #c9a86a;
+}
+
+.footer-column a {
+    color: #c9a86a;
+}
+
+.footer-column {
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-content {
+    display:flex;
+}
+
+.footer-content>* {
+    flex:25%;
+    font-size:20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size:30px;
+}
+
+
+select,
+button {
+    background: #151719;
+    color: #f5f1e8;
+    border: 2px solid #80683d;
+}
+
+button:hover {
+    background: #c9a86a;
+    color: #0b0d0f;
+}
