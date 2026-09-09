@@ -3,16 +3,16 @@ export const cart = JSON.parse(localStorage.getItem("cart")) || [];
 updateCartCount();
 let currentProduct;
 
-        if(window.location.pathname==="/wearing.html"){
+        if(window.location.pathname==="/E-commerce/wearing.html"){
             currentProduct=wearingproducts;
         }
-        else if(window.location.pathname==="/home.html"){
+        else if(window.location.pathname==="/E-commerce/home.html"){
              currentProduct=home_products;
         }
-        else if (window.location.pathname==="/Electronics.html"){
+        else if (window.location.pathname==="/E-commerce/Electronics.html"){
              currentProduct=electronicsproducts;
         }
-        else if(window.location.pathname==="/beauty.html"){
+        else if(window.location.pathname==="/E-commerce/beauty.html"){
              currentProduct=beauty_products;
         }
 
